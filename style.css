@@ -1,0 +1,226 @@
+body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4CAF50, #2E7D32);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .benefits, .testimonials {
+      margin: 50px 0;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2E7D32;
+      margin-bottom: 30px;
+    }
+
+    .benefit-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .benefit {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 60px 0;
+    }
+
+    .cta button {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 1.2em;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .cta button:hover {
+      background-color: #388E3C;
+    }
+
+    .testimonials {
+      background-color: #e8f5e9;
+      padding: 40px 20px;
+      border-radius: 10px;
+    }
+
+    .testimonial {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin: 15px;
+      text-align: center;
+    }
+
+    footer {
+      background: #2E7D32;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+      .benefit-list {
+        flex-direction: column;
+      }
+    }
+
+        :root{
+      --bg:#f7f8fb;
+      --card:#ffffff;
+      --accent:#2b6cb0;
+      --muted:#6b7280;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg);
+      color:#111827;
+      line-height:1.4;
+    }
+
+    /* Header: background como data-URI SVG embutido no CSS */
+    header{
+      background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns=http://www.w3.org/2000/svg%20width=1200%20height=200%3E%3Crect%20width=1200%20height=200%20fill=lightblue/%3E%3Ccircle%20cx=110%20cy=100%20r=60%20fill=white/%3E%3C/svg%3E");
+      background-size:cover;
+      background-position:center;
+      padding:48px 16px;
+      text-align:center;
+      color:#08304a;
+      border-bottom:1px solid #e6eef6;
+    }
+    header h1{margin:0 0 8px; font-size:1.6rem}
+    header p{margin:0; color:var(--muted)}
+
+    .container{
+      max-width:960px;
+      margin:28px auto;
+      padding:0 16px 48px;
+    }
+
+    .benefit-list{
+      display:flex;
+      gap:16px;
+      flex-wrap:wrap;
+      margin-top:16px;
+    }
+    .benefit{
+      background:var(--card);
+      border:1px solid #e6eef6;
+      border-radius:10px;
+      padding:18px;
+      flex:1 1 260px;
+      min-width:220px;
+      box-shadow:0 1px 2px rgba(15,23,42,0.03);
+      text-align:center;
+    }
+    .benefit svg{width:56px; height:56px; margin-bottom:10px;}
+    .benefit h3{margin:0 0 8px; font-size:1.05rem}
+    .benefit p{margin:0; color:var(--muted); font-size:0.95rem}
+
+    .cta{
+      margin-top:28px;
+      text-align:center;
+      background:linear-gradient(180deg,#ffffff, #fcfeff);
+      padding:20px;
+      border-radius:10px;
+      border:1px solid #e6eef6;
+    }
+
+    /* Exemplo: imagem decorativa embutida no CSS (como data-URI) */
+    .cta .badge{
+      width:200px;
+      height:60px;
+      margin:0 auto 12px;
+      background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns=http://www.w3.org/2000/svg%20width=200%20height=60%3E%3Crect%20width=200%20height=60%20fill=%23eef6ff/%3E%3Ctext%20x=100%20y=38%20text-anchor=middle%20fill=%232b6cb0%20font-size=18%3EPromo%3C/text%3E%3C/svg%3E");
+      background-repeat:no-repeat;
+      background-position:center;
+      background-size:contain;
+    }
+
+    form{
+      display:flex;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    label{display:none}
+    input[type="email"]{
+      padding:10px 12px;
+      border:1px solid #dbeafe;
+      border-radius:8px;
+      width:320px;
+      max-width:100%;
+      font-size:1rem;
+      outline-color:var(--accent);
+    }
+    button{
+      background:var(--accent);
+      color:#fff;
+      border:none;
+      padding:10px 14px;
+      border-radius:8px;
+      cursor:pointer;
+      font-weight:600;
+    }
+    button:hover{opacity:0.95}
+
+    footer{
+      text-align:center;
+      padding:18px 12px;
+      color:var(--muted);
+      font-size:0.9rem;
+      border-top:1px solid #e6eef6;
+      background:transparent;
+    }
+
+    @media (max-width:640px){
+      header h1{font-size:1.3rem}
+      .benefit-list{flex-direction:column}
+      form{flex-direction:column; align-items:center}
+      input[type="email"]{width:100%}
+      button{width:100%}
+    }
+ 
